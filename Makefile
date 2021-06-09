@@ -27,3 +27,8 @@ set-firacode:
 
 set-lightdm:
 	sudo ln -f ~/dotfiles/lightdm/slick-greeter.conf /etc/lightdm/slick-greeter.conf
+
+ani-cli:
+	mkdir -p ~/Apps
+	curl https://raw.githubusercontent.com/pystardust/ani-cli/master/ani-cli >> ~/Apps/ani-cli
+	sudo chmod 755 ~/Apps/ani-cli
