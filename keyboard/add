@@ -1,0 +1,173 @@
+// CLAVIER APL
+hidden partial keypad_keys
+xkb_symbols "dyalog_box" {
+
+// ┌───┬───┬───┬───┐
+// │   │   │   │   │
+// ├───┼───┼───┼───┤
+// │ ┌ │ ┬ │ ┐ │   │
+// ├───┼───┼───┤   │
+// │ ├ │ ┼ │ ┤ │   │
+// ├───┼───┼───┼───┤
+// │ └ │ ┴ │ ┘ │   │
+// ├───┴───┼───┤   │
+// │   ─   │ │ │   │
+// └───────┴───┴───┘
+
+	key <KP0>  { [ U2500 ] };	// box drawing light horizontal
+	key <KP1>  { [ U2514 ] };	// box drawing light up and right
+	key <KP2>  { [ U2534 ] };	// box drawing light up and horizontal
+	key <KP3>  { [ U2518 ] };	// box drawing light up and left
+	key <KP4>  { [ U251c ] };	// box drawing light vertical and right
+	key <KP5>  { [ U253c ] };	// box drawing light vertical and horizontal
+	key <KP6>  { [ U2524 ] };	// box drawing light vertical and left
+	key <KP7>  { [ U250c ] };	// box drawing light down and right
+	key <KP8>  { [ U252c ] };	// box drawing light down and horizontal
+	key <KP9>  { [ U2510 ] };	// box drawing light down and left
+	key <KPDL> { [ U2502 ] };	// box drawing light vertical
+};
+
+
+
+hidden partial
+xkb_symbols "dyalog_codes" {
+
+//	Layout of private use area for this. In the style of the Unicode book
+//
+//				APL special actions		F800-F88F
+//
+//	│F800 F810 F820 F830 F840 F850 F860 F870 F880
+//	├────┬────┬────┬────┬────┬────┬────┬────┬────┐
+//     0│QT  │LL  │BK  │FX  │Rc  │BP  │PA  │    │    │
+//	├────┼────┼────┼────┼────┼────┼────┼────┼────┤
+//     1│ER  │HO  │ZM  │LN  │LW  │AB  │SA  │    │    │
+//	├────┼────┼────┼────┼────┼────┼────┼────┼────┤
+//     2│TB  │CT  │SC  │MC  │RW  │HT  │RZ  │    │    │
+//	├────┼────┼────┼────┼────┼────┼────┼────┼────┤
+//     3│BT  │PT  │RP  │MR  │Lw  │TH  │AC  │    │    │
+//	├────┼────┼────┼────┼────┼────┼────┼────┼────┤
+//     4│EP  │IN  │NX  │JP  │Rw  │RM  │MA  │    │    │
+//	├────┼────┼────┼────┼────┼────┼────┼────┼────┤
+//     5│UC  │II  │PV  │D1  │Uc  │CB  │OF  │    │    │
+//	├────┼────┼────┼────┼────┼────┼────┼────┼────┤
+//     6│DC  │DI  │RT  │D2  │Dc  │PR  │FS  │    │TO  │
+//	├────┼────┼────┼────┼────┼────┼────┼────┼────┤
+//     7│RC  │DP  │RA  │D3  │Ll  │SR  │FA  │    │MO  │
+//	├────┼────┼────┼────┼────┼────┼────┼────┼────┤
+//     8│LC  │DB  │ED  │D4  │Rl  │IS  │TT  │    │    │
+//	├────┼────┼────┼────┼────┼────┼────┼────┼────┤
+//     9│US  │RD  │TC  │D5  │Ul  │TL  │FT  │    │    │
+//	├────┼────┼────┼────┼────┼────┼────┼────┼────┤
+//     A│DS  │TG  │NB  │U1  │Dl  │UA  │PL  │    │    │
+//	├────┼────┼────┼────┼────┼────┼────┼────┼────┤
+//     B│RS  │DK  │NS  │U2  │Us  │AO  │CA  │    │    │
+//	├────┼────┼────┼────┼────┼────┼────┼────┼────┤
+//     C│LS  │OP  │ST  │U3  │Ds  │DO  │    │    │    │
+//	├────┼────┼────┼────┼────┼────┼────┼────┼────┤
+//     D│UL  │CP  │EN  │U4  │DD  │GL  │    │    │S1  │
+//	├────┼────┼────┼────┼────┼────┼────┼────┼────┤
+//     E│DL  │MV  │IF  │U5  │DH  │CH  │    │    │S2  │
+//	├────┼────┼────┼────┼────┼────┼────┼────┼────┤
+//     F│RL  │FD  │HK  │Lc  │BH  │PU  │    │    │OS  │
+//	└────┴────┴────┴────┴────┴────┴────┴────┴────┘
+//
+//				APL Function Keys		F700-F7FF
+//
+//	│F700 ...                           ...  F7F0
+//	├────┬────┬────┬────┬....┬────┬────┬────┬────┐
+//     0│F0  │F16 │F32 │F48 │    │F192│F208│F224│F240│
+//	.
+//	.
+//	.
+//     F│F15 │F31 │F47 │F63 │    │F207│F223│F239│F255│
+//	└────┴────┴────┴────┴....┴────┴────┴────┴────┘
+//	
+//	whilst these locations are defined. Dyalog's "aplkeys/xterm" file copes with
+//	normal function keys from the base keyboard rather than this overlay
+
+// ┌─────┐                                                                       ┌───┐
+// │ CA  │                                                                       │ZM │
+// │ QT  │                                                                       │ZM │
+// └─────┘                                                                       └───┘
+
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃   CB    ┃
+// │     │     │     │     │     │     │     │     │     │     │     │     │     ┃   BP    ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
+// ┃ BT    ┃     │     │     │     │     │     │     │     │     │     │     │     ┃       ┃
+// ┃ TB    ┃     │     │     │     │     │     │     │     │     │     │     │     ┃       ┃
+// ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
+// ┃        ┃     │     │     │     │     │     │     │     │     │     │     │     ┃ TC   ┃
+// ┃        ┃     │     │     │     │     │     │     │     │     │     │     │     ┃ ED   ┃
+// ┣━━━━━━━┳┹────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┲┷━━━━━┻━━━━━━┫
+// ┃       ┃     │     │     │     │     │     │     │     │     │     │     ┃             ┃
+// ┃       ┃     │     │     │     │     │     │     │     │     │     │     ┃             ┃
+// ┣━━━━━━━╋━━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴───┲━┷━━━━━╈━━━━━┻━┳━━━━━━━┳━━━┛
+// ┃       ┃       ┃       ┃              MO                   ┃       ┃       ┃       ┃
+// ┃       ┃       ┃       ┃              TO                   ┃       ┃       ┃       ┃
+// ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
+
+
+	key <BKSP> { [ Uf850,	Uf855	] };	// BP CB
+	key <ESC>  { [ Uf800,	Uf86b	] };	// QT CA
+	key <FK11> { [ Uf821,	Uf821	] };	// ZM, ZM put this on both, the unshifted one sometimes gets lost
+	key <RTRN> { [ Uf828,	Uf829	] };	// ED, TC
+	key <SPCE> { [ Uf886,	Uf887	] };	// TO, MO
+	key <TAB>  { [ Uf802,	Uf803	] };	// TB, BT
+
+//      ┌─────┐
+//      │     │
+//      │ BK  │
+// ┌────┼─────┼────┐
+// │ BH │     │ RM │
+// │ PV │ FD  │ NX │
+// └────┴─────┴────┘
+
+	key <DOWN> { [ Uf81f		] };	// FD
+	key <LEFT> { [ Uf825,	Uf84f	] };	// PV, BH
+	key <RGHT> { [ Uf824,	Uf854	] };	// NX, RM
+	key <UP>   { [ Uf820		] };	// BK
+
+
+// ┌───┬───┬───┐
+// │PT │LL │UL │
+// │CP │LS │US │
+// ├───┼───┼───┤
+// │CT │RL │DL │
+// │DK │RS │DS │
+// └───┴───┴───┘
+
+	key <DELE> { [ Uf81b, Uf812 ] };	// DK, CT
+	key <END>  { [ Uf80b, Uf80f ] };	// RS, RL
+	key <HOME> { [ Uf80c, Uf810 ] };	// LS, LL
+	key <INS>  { [ Uf81d, Uf813 ] };	// CP, PT
+	key <PGDN> { [ Uf80a, Uf80e ] };	// DS, DL
+	key <PGUP> { [ Uf809, Uf80d ] };	// US, UL
+
+// ┌───┬───┬───┬───┐
+// │   │RD │TG │LN │
+// ├───┼───┼───┼───┤
+// │   │   │   │   │
+// ├───┼───┼───┤TL │
+// │   │   │   │   │
+// ├───┼───┼───┼───┤
+// │   │   │   │   │
+// ├───┴───┼───┤   │
+// │       │   │   │
+// └───────┴───┴───┘
+
+
+	key <KPAD> { [ Uf859 ] };	// TL
+	key <KPDV> { [ Uf819 ] };	// RD
+	key <KPMU> { [ Uf81a ] };	// TG
+	key <KPSU> { [ Uf831 ] };	// LN
+};
+
+xkb_symbols "dyalog" {
+
+	include "apl(dyalog_base)"
+	include "apl(dyalog_box)"
+	include "apl(dyalog_codes)"
+
+	name[Group1] = "APL symbols (Dyalog APL)";
+};
