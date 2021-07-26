@@ -1,0 +1,13 @@
+[user]
+	name = ARKANYOTA
+	email = 38374187+ARKANYOTA@users.noreply.github.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
