@@ -2,7 +2,6 @@ default partial alphanumeric_keys
 xkb_symbols "basic" {
 
     include "latin"
-
     name[Group1]="French";
 
     key <AE01>	{ [ ampersand,          1,  onesuperior,   exclamdown ]	};
@@ -42,7 +41,7 @@ xkb_symbols "basic" {
     //key <LFSH>	{ [   m,n,o,p ] }; // shift 
     //key <LWIN>	{ [   m,n,o,p ] }; // shift 
     //key <RWIN>	{ [   m,n,o,p ] }; // shift 
-    key <FK02>	{ [ U2588 ] }; // shift 
+    key <FK02>	{ [ ] }; // shift 
     key <MENU>	{ [ U2588 ] }; // shift 
     key <FK14>	{ [ U2588 ] }; // shift 
     key <FK15>	{ [ U2588 ] }; // shift 

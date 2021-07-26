@@ -1,0 +1,51 @@
+<application>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/bin/node" />
+    <local-interpreter path="/usr/bin/node" />
+  </component>
+  <component name="ProjectPluginTrackerManager">
+    <trackers>
+      <map>
+        <entry key="1uLskdFr1UMxbvz3zbotWi7ycdn">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="1uSkCqVL6Etsy0MBOw2lUKmJbIL">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="1vGWA1JQB4892xoYHjThIJBsGh9">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+      </map>
+    </trackers>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="MarketplacePluginsSearchHistory" value="vim&#10;vi" />
+    <property name="NonModalCommitCustomization.IsApplied" value="true" />
+    <property name="ask.about.ctrl.y.shortcut.v2" value="true" />
+    <property name="clion.initialConfigPerformed" value="true" />
+    <property name="evlsprt3.211" value="18" />
+    <property name="experimentalFeature.editor.reader.mode" value="false" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Omega" />
+    <property name="file.gist.reindex.count" value="33" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="fileTypeDetectors" value="com.intellij.database.vfs.DbStorageFileType$Detector:com.intellij.ide.scratch.ScratchFileServiceImpl$Detector:com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector:com.jetbrains.cidr.lang.OCHeaderFileTypeDetector" />
+    <property name="got.it.tooltip.cwm.invitation.notification" value="1" />
+    <property name="ide.updates.previous.build.number" value="CL-211.7442.42" />
+    <property name="ideavim.statistics.timestamp" value="1626190243781" />
+    <property name="lastSeenTip" value="neue-warning_for_incorrect_equals_operator.html" />
+    <property name="lastTimeTipsWereShown" value="1626188698602" />
+    <property name="log.trace.categories" value="#com.jetbrains.rdserver.requests&#10;#com.jetbrains.rd.ide.document&#10;#com.jetbrains.rdserver.document&#10;#com.jetbrains.rdserver.editors&#10;#com.jetbrains.rdserver.actions" />
+    <property name="seenTips" value="neue-TabInLookups.html,neue-SmartTypeCompletion.html,neue-ColorEditingInCss.html,neue-warning_for_incorrect_equals_operator.html" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+    <property name="ts.lib.d.ts.version" value="4.2.2" />
+  </component>
+  <component name="ToolbarSettingsService">
+    <option name="NEW_TOOLBAR_SETTINGS" value="OLD_NAVBAR" />
+  </component>
+</application>
