@@ -1,0 +1,6 @@
+<keymap version="1" name="XWin copy" parent="Default for XWin">
+  <action id="CollapseSelection">
+    <keyboard-shortcut first-keystroke="ctrl period" />
+    <keyboard-shortcut first-keystroke="ctrl semicolon" />
+  </action>
+</keymap>

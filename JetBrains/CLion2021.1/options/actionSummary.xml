@@ -1,0 +1,76 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="CPP.CreateCMakeProject">
+      <i c="2" l="1625530740687" />
+    </e>
+    <e n="CodeCompletion">
+      <i c="2" l="1624666275383" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="5" l="1624666285288" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="1" l="1624666273733" />
+    </e>
+    <e n="EditorDelete">
+      <i c="1" l="1624666283524" />
+    </e>
+    <e n="EditorDeleteToWordStart">
+      <i c="3" l="1624666284632" />
+    </e>
+    <e n="EditorDown">
+      <i c="9" l="1624666286981" />
+    </e>
+    <e n="EditorEscape">
+      <i c="1" l="1624666280622" />
+    </e>
+    <e n="EditorNextWord">
+      <i c="5" l="1624666289046" />
+    </e>
+    <e n="EditorRight">
+      <i c="6" l="1624666266245" />
+    </e>
+    <e n="EditorUp">
+      <i c="4" l="1624666267543" />
+    </e>
+    <e n="FindUsages">
+      <i c="1" l="1626190644633" />
+    </e>
+    <e n="OpenFile">
+      <i c="1" l="1626188697260" />
+    </e>
+    <e n="ShowSettings">
+      <i c="1" l="1626188811393" />
+    </e>
+    <e n="ToggleLineBreakpoint">
+      <i c="1" l="1626190346196" />
+    </e>
+    <e n="com.intellij.codeInsight.daemon.NavigateAction">
+      <i c="4" l="1626190326218" />
+    </e>
+    <e n="com.intellij.ide.browsers.actions.BaseOpenInBrowserAction">
+      <i c="1" l="1624458180744" />
+    </e>
+    <e n="com.intellij.javascript.nodejs.packageJson.notification.PackageJsonGetDependenciesAction">
+      <i c="2" l="1624458231095" />
+    </e>
+    <e n="com.intellij.openapi.actionSystem.EmptyAction$MyDelegatingAction">
+      <i c="3" l="1626190661697" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="1" l="1626190408915" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$4">
+      <i c="3" l="1626190723894" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.welcomeScreen.ActionGroupPanelWrapper$5">
+      <i c="1" l="1624456309009" />
+    </e>
+    <e n="com.intellij.xdebugger.impl.breakpoints.RemoveBreakpointGutterIconAction">
+      <i c="1" l="1626190347577" />
+    </e>
+    <e n="com.maddyhome.idea.vim.ui.ex.ExShortcutKeyAction">
+      <i c="3" l="1626190656330" />
+    </e>
+  </component>
+</application>

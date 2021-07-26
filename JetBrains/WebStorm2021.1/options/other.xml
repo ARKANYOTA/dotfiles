@@ -1,0 +1,79 @@
+<application>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/bin/node">
+      <version-cache version="12.22.3" last-modified="1626650022000" />
+    </local-interpreter>
+    <local-interpreter path="/usr/bin/node">
+      <version-cache version="12.22.3" last-modified="1626650022000" />
+    </local-interpreter>
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="Fira Code" />
+  </component>
+  <component name="ProjectPluginTrackerManager">
+    <trackers>
+      <map>
+        <entry key="1uJHIIlpOH7gW2YA6oMEqDp6mC2">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="1uMXNus10ZjIA1M2aNdkKwIBmvo">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="1uMa63ziAU9HG7BOC7mQl9eOW4h">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="1uMaAxxElS3Z0I7GWbGLQp8aH9p">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="1vPOnmMr5miBOThfCxI9qGFoSeG">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="1vogIt2nhdFvSBfqvIlsFxfL5SW">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+      </map>
+    </trackers>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GeneralSettings.initiallyConfigured" value="true" />
+    <property name="MarketplacePluginsSearchHistory" value="scss&#10;sc&#10;vim&#10;vi&#10;nvim" />
+    <property name="NonModalCommitCustomization.IsApplied" value="true" />
+    <property name="ask.about.ctrl.y.shortcut.v2" value="true" />
+    <property name="completion.ml.enabled.notification.shown" value="true" />
+    <property name="evlsprt3.211" value="11" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Brave-Browser&#10;/home/ay/arkanyota.github.io" />
+    <property name="file.gist.reindex.count" value="1" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="fileTypeDetectors" value="com.intellij.ide.scratch.ScratchFileServiceImpl$Detector:com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector:com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector:com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector" />
+    <property name="got.it.tooltip.cwm.invitation.notification" value="1" />
+    <property name="ide.memory.adjusted" value="true" />
+    <property name="ide.updates.previous.build.number" value="WS-211.7442.26" />
+    <property name="ideavim.statistics.timestamp" value="1627233783243" />
+    <property name="last_opened_file_path" value="$USER_HOME$/arkanyota.github.io" />
+    <property name="log.trace.categories" value="#com.jetbrains.rdserver.requests&#10;#com.jetbrains.rd.ide.document&#10;#com.jetbrains.rdserver.document&#10;#com.jetbrains.rdserver.editors&#10;#com.jetbrains.rdserver.actions" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+    <property name="ts.lib.d.ts.version" value="4.2.2" />
+  </component>
+  <component name="TerminalCommandHistoryManager">
+    <command-history-files>
+      <command-history-file filename="botjoffre25072021-history" project-path="$USER_HOME$/WebstormProjects/botjoffre25072021" last-access-time="1627233867984" />
+      <command-history-file filename="untitled-history1" project-path="$USER_HOME$/WebstormProjects/untitled" last-access-time="1626460390448" />
+      <command-history-file filename="untitled-history" project-path="$USER_HOME$/WebstormProjects/untitled" last-access-time="1626460390471" />
+    </command-history-files>
+  </component>
+  <component name="ToolbarSettingsService">
+    <option name="NEW_TOOLBAR_SETTINGS" value="OLD_NAVBAR" />
+  </component>
+</application>

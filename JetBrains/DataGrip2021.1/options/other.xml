@@ -1,0 +1,30 @@
+<application>
+  <component name="ProjectPluginTrackerManager">
+    <trackers>
+      <map>
+        <entry key="1uSkibU8kHoU5yaROUAmvcmHJZE">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+      </map>
+    </trackers>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DBE.Init.Cfg.1" value="true" />
+    <property name="NonModalCommitCustomization.IsApplied" value="true" />
+    <property name="ask.about.ctrl.y.shortcut.v2" value="true" />
+    <property name="evlsprt3.211" value="15" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Documents/data.v3.json" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="fileTypeDetectors" value="com.intellij.database.vfs.DbStorageFileType$Detector:com.intellij.ide.scratch.ScratchFileServiceImpl$Detector" />
+    <property name="ide.memory.adjusted" value="true" />
+    <property name="ide.updates.previous.build.number" value="DB-211.7442.53" />
+    <property name="lastSeenTip" value="neue-CamelHumpsInCodeCompletion.html" />
+    <property name="lastTimeTipsWereShown" value="1624666515474" />
+    <property name="seenTips" value="neue-CamelHumpsInCodeCompletion.html" />
+  </component>
+  <component name="ToolbarSettingsService">
+    <option name="NEW_TOOLBAR_SETTINGS" value="OLD_NAVBAR" />
+  </component>
+</application>
