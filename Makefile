@@ -6,13 +6,15 @@ yay:
 	echo "INSTALL YAY"
 
 yay-packages:
-	yay -Sy kitty nerd-fonts-fira-code brave vim zsh zsh-completions zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k feh pulseaudio
+	yay -Sy kitty ttf-fira-code brave vim zsh zsh-completions zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k feh pulseaudio
 
 ##########################
 #      CONFIG          #
 ##########################
 i3-config:
 	ln -sf "$(DOTFILE_PATH)/config/i3wm" ~/.i3/config
+picom-config:
+	ln -sf "$(DOTFILE_PATH)/config/picom" ~/.config/picom.conf
 git-config:
 	ln -sf "$(DOTFILE_PATH)/config/gitconfig" ~/.gitconfig
 
@@ -25,6 +27,9 @@ vim-config:
 
 zsh-config:
 	ln -sf "$(DOTFILE_PATH)/config/zshrc" ~/.zshrc
+	# wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+	sh "$(DOTFILE_PATH)/install.sh"
+
 
 background-config:
 	# nitrogen --set-auto "$(DOTFILE_PATH)/background/arkanyota-logo/AY_3D_4K_dark.png"

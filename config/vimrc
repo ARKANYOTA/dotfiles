@@ -8,4 +8,5 @@ let &t_ut=''
 :set shiftwidth=4
 :set clipboard=unnamedplus
 :set listchars=tab:>-,trail:·,precedes:<,extends:>,eol:$
-:nmap <C-A> :set invlist <Enter>
+:nmap <C-C> :set invlist <Enter>
+:set showcmd

@@ -39,7 +39,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Shift+Return exec terminal
-bindsym $mod+Return exec kitty fish
+bindsym $mod+Return exec kitty 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -291,8 +291,8 @@ mode "resize" {
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-#exec --no-startup-id nitrogen --restore; sleep 1; picom -b
-exec --no-startup-id bwall -d 3 -s cup_dark 
+exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+# exec --no-startup-id bwall -d 3 -s cup_dark 
 exec --no-startup-id picom -b
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
