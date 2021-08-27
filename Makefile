@@ -6,11 +6,13 @@ yay:
 	echo "INSTALL YAY"
 
 yay-packages:
-	yay -Sy kitty nerd-fonts-fira-code brave-bin vim zsh zsh-completions zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k feh pulseaudio
+	yay -Sy kitty nerd-fonts-fira-code brave vim zsh zsh-completions zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k feh pulseaudio
 
 ##########################
 #      CONFIG          #
 ##########################
+i3-config:
+	ln -sf "$(DOTFILE_PATH)/config/i3wm" ~/.i3/config
 git-config:
 	ln -sf "$(DOTFILE_PATH)/config/gitconfig" ~/.gitconfig
 
