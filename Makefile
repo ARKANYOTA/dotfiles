@@ -1,5 +1,5 @@
 global:
-	ln -sf ~/dotfiles/global/gitconfig ~/.gitconfig
+	ln -sf ~/dotfiles/globals/gitconfig ~/.gitconfig
 theme-grub:
 	@echo "change GRUB_THEME path with your home directory"
 	sudo ln -sf ~/dotfiles/grub/etc-default-grub /etc/default/grub
