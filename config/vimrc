@@ -10,3 +10,11 @@ let &t_ut=''
 :set listchars=tab:>-,trail:·,precedes:<,extends:>,eol:$
 :nmap <C-C> :set invlist <Enter>
 :set showcmd
+:let AY = 1
+
+" call plug#begin()
+" Plug 'preservim/NERDTree'
+" Plug 'vim-airline/vim-airline'
+" Plug 'https://github.com/ap/vim-css-color'
+" call plug#end()
+
