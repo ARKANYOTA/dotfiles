@@ -10,7 +10,7 @@ yay-packages:
 	yay -Sy kitty ttf-fira-code brave vim zsh zsh-completions zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k feh pulseaudio
 
 yay-packages-arch:
-	yay -S picom nitrogen 
+	yay -S picom nitrogen dmenu 
 
 ##########################
 #      CONFIG          #
@@ -28,6 +28,8 @@ kitty-config:
 
 vim-config:
 	ln -sf "$(DOTFILE_PATH)/config/vimrc" ~/.vimrc
+	rm -rf ~/.vim
+	ln -sf "$(DOTFILE_PATH)/config/vim" ~/.vim
 
 zsh-config:
 	ln -sf "$(DOTFILE_PATH)/config/zshrc" ~/.zshrc
