@@ -9,8 +9,14 @@ yay:
 yay-packages:
 	yay -Sy kitty ttf-fira-code brave vim zsh zsh-completions zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k feh pulseaudio
 
+yay-useless-package:
+	yay -S libreoffice-fresh-fr
+
 yay-packages-arch:
 	yay -S picom nitrogen dmenu 
+
+yay-divers-arch:
+	yay -S alsa-utils
 
 ##########################
 #      CONFIG          #

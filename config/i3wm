@@ -18,7 +18,8 @@ exec setxkbmap fr
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 # default_border pixel 1
-default_border pixel 1 
+# default_border pixel 1 
+default_border none
 default_floating_border normal
 
 # Hide borders
@@ -215,6 +216,7 @@ for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="octopi"] floating enable
 for_window [title="About Pale Moon"] floating enable
+for_window [title="^Omega$"] floating enable
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
@@ -343,7 +345,7 @@ set_from_resource $term_color15    color15
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
 	i3bar_command i3bar
-	# status_command i3status
+	status_command i3status
 	position bottom
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
@@ -397,7 +399,9 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 14
+set $base_inner 0
+
+gaps inner $base_inner
 gaps outer -2
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
@@ -417,6 +421,11 @@ set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
 bindsym $mod+Shift+g mode "$mode_gaps"
+
+
+bindsym $mod+g gaps inner current set 0; border pixel 0
+
+bindsym $mod+Ctrl+g gaps inner current set $base_inner
 
 mode "$mode_gaps" {
         bindsym o      mode "$mode_gaps_outer"
