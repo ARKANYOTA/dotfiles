@@ -1,11 +1,15 @@
+"""
 " #!/usr/bin/env python
-" #┎━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-" #┃ Nom: Carlisi, Prenom: Nolan, Classe: TG 04  ┃
-" #┃ Creation: 12/09/2021                        ┃
-" #┃ Mise a jour: 12/09/2021                     ┃
-" #┃ Fichier: < new >                            ┃
-" #┃ Exercice fiche .                            ┃
-" #┖━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+" #vim: set sw=4 sts=4 et fdm=marker:
+" #┎━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+" #┃ Nom: Carlisi, Prenom: Nolan, Classe: TG 04 ┃
+" #┃ Creation: 14/09/2021 15:37:20              ┃
+" #┃ Mise a jour: 14/09/2021 15:37:20           ┃
+" #┃ Fichier: coursheader.vim                   ┃
+" #┃ Exercice fiche .                           ┃
+" #┖━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+
 function! s:date()
 	return strftime("%d/%m/%Y %H:%M:%S")
 endfunction
@@ -26,36 +30,38 @@ endfunction
 function! s:line(n)
 	if a:n == 1
 		return '#!/usr/bin/env python'
-	elseif a:n == 2
-		return '#┎━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓'
+    elseif a:n == 2
+        return  '# vim: set sw=4 sts=4 et fdm=marker:'
 	elseif a:n == 3
-		return s:textline('Nom: Carlisi, Prenom: Nolan, Classe: TG 04')
+		return '#┎━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓'
 	elseif a:n == 4
-		return s:textline('Creation: ' . s:date())
+		return s:textline('Nom: Carlisi, Prenom: Nolan, Classe: TG 04')
 	elseif a:n == 5
-		return s:textline('Mise a jour: ' . s:date())
+		return s:textline('Creation: ' . s:date())
 	elseif a:n == 6
-		return s:textline('Fichier: ' . s:filename())
+		return s:textline('Mise a jour: ' . s:date())
 	elseif a:n == 7
-		return s:textline('Exercice fiche .')
+		return s:textline('Fichier: ' . s:filename())
 	elseif a:n == 8
+		return s:textline('Exercice fiche .')
+	elseif a:n == 9
 		return '#┖━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛'
 	endif
 endfunction
 
 function! s:update()
-	if getline(5) =~ "#┃ " . "Mise a jour: "
+	if getline(6) =~ "#┃ " . "Mise a jour: "
 		if &mod
-			call setline(5, s:line(5))
+			call setline(6, s:line(6))
 		endif
-		call setline(6, s:line(6))
+		call setline(7, s:line(7))
 		return 0
 	endif
 	return 1
 endfunction
 
 function! s:insert()
-	let l:line = 8
+	let l:line = 9
 
 	" empty line after header
 	call append(0, "")

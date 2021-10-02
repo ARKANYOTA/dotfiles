@@ -149,15 +149,24 @@ bindsym $mod+Ctrl+Left workspace prev
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 1:000
-set $ws2 2:001
-set $ws3 3:010
-set $ws4 4:011
-set $ws5 5:100
-set $ws6 6:101
-set $ws7 7:110
-set $ws8 8:111
-set $ws9 9:Terms
+set $ws1 1:I
+set $ws2 2:II
+set $ws3 3:III
+set $ws4 4:IV
+set $ws5 5:V
+set $ws6 6:VI
+set $ws7 7:VII
+set $ws8 8:VIII
+set $ws9 9:IX
+# set $ws1 1:000
+# set $ws2 2:001
+# set $ws3 3:010
+# set $ws4 4:011
+# set $ws5 5:100
+# set $ws6 6:101
+# set $ws7 7:110
+# set $ws8 8:111
+# set $ws9 9:Terms
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -460,3 +469,5 @@ mode "$mode_gaps_outer" {
 
 
 exec ssh-agent bash
+exec xinput disable 7
+exec xinput disable 8

@@ -10,7 +10,11 @@ let &t_ut=''
 " :set listchars=tab:>-,trail:·,precedes:<,extends:>,eol:$
 :nmap <C-C> :set invlist <Enter>
 :set showcmd
-:let AY = 1
+:colorscheme ay
+
+augroup vim_save 
+    au! BufNewFile,BufFilePre,BufRead *.vim.save set filetype=vim
+augroup END
 
 
 " Specify a directory for plugins
@@ -55,3 +59,8 @@ Plug 'junegunn/goyo.vim'
 call plug#end()
 
 
+if expand("%:t")=="main.lua"
+	map <F2> :!love ./<CR>
+endif
+
+" map <F3> :source %<CR>
