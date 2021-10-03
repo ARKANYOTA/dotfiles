@@ -42,12 +42,16 @@ zsh-config:
 	# wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 	sh "$(DOTFILE_PATH)/install.sh"
 
+ranger-config:
+	rm -rf ~/.config/ranger
+	ln -sf "$(DOTFILE_PATH)/config/ranger" ~/.config/
+
 
 background-config:
 	# nitrogen --set-auto "$(DOTFILE_PATH)/background/arkanyota-logo/AY_3D_4K_dark.png"
 	nitrogen "$(DOTFILE_PATH)/background/arkanyota-logo/"
 
-make-config: git-config kitty-config background-config vim-config
+make-config: git-config kitty-config background-config vim-config ranger-config
 
 ##########################
 #      GRUB            #

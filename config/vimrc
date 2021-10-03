@@ -64,3 +64,4 @@ if expand("%:t")=="main.lua"
 endif
 
 " map <F3> :source %<CR>
+iabbr ay arkanyota
