@@ -1,0 +1,12 @@
+# vim: set ft=python et fdm=marker:
+
+# Includes {{{1
+include "/usr/share/kbd/keymaps/i386/azerty/fr-latin1.map.gz"
+
+# Strings {{{1
+string F10 = "l."
+string F11 = "Goodbye!"
+
+# Keycode {{{1
+keycode 67 = F10 F11 
+

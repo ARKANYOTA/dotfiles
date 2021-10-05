@@ -66,6 +66,17 @@ theme-grub:
 #      KEYBOARD        #
 ##########################
 
+setup-key-latin:
+	localectl set-keymap fr-latin9
+
+
+# https://wiki.archlinux.org/title/Linux_console_(Fran%C3%A7ais)/Keyboard_configuration_(Fran%C3%A7ais)#Obtenir_la_liste_des_dispositions_disponibles
+# /etc/vconsole.conf
+# /etc/X11/xorg.conf.d/
+
+# showconsolefont
+# setfont -8 /usr/share/kbd/consolefonts/... # font
+# https://wiki.archlinux.org/title/Linux_console
 
 
 ##########################

@@ -17,45 +17,13 @@ augroup vim_save
 augroup END
 
 
-" Specify a directory for plugins
-" - For Neovim: stdpath('data') . '/plugged'
-" - Avoid using standard Vim directory names like 'plugin'
  call plug#begin('~/.vim/plugged')
 Plug 'preservim/NERDTree'
 Plug 'vim-airline/vim-airline'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 " Zen mode :Goyo
 Plug 'junegunn/goyo.vim'
-
-" Make sure you use single quotes
-
-" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
-" Plug 'junegunn/vim-easy-align'
-
-" Any valid git URL is allowed
-"Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-
-" Multiple Plug commands can be written in a single line using | separators
-"Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-
-" On-demand loading
-"Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-"Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-
-" Using a non-default branch
-"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-
-" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
-"Plug 'fatih/vim-go', { 'tag': '*' }
-
-" Plugin options
-"Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
-
-" Plugin outside ~/.vim/plugged with post-update hook
-"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-
-" Unmanaged plugin (manually installed and updated)
-"Plug '~/my-prototype-plugin'
+Plug 'mbbill/undotree'
 call plug#end()
 
 
@@ -65,3 +33,128 @@ endif
 
 " map <F3> :source %<CR>
 iabbr ay arkanyota
+
+" Nombre de couleur &t_Co
+"if &t_Co >= 256
+"	set background=dark
+"	" colorscheme solarized
+"endif
+nnoremap + <C-W>+
+nnoremap _ <C-W>-
+nnoremap = <C-W>>
+nnoremap - <C-W><
+
+" ---
+let loaded_vimspell = 1
+set spelllang=fr
+set spellsuggest=10
+let spell_executable = "aspell"
+let spell_auto_type = ''
+let spell_insert_mode = 0
+
+
+
+" let mapleader = ","
+" let localleader = "\\"
+" set nocompatible
+" set number
+" set nowrap
+" set autoindent
+" set smartindent
+" set cindent
+" set backspace=indent,eol,start
+" set tabstop=4
+" set softtabstop=4
+" set shiftwidth=4
+" set noexpandtab
+" filetype plugin on
+" set showmatch "brackets
+" " Enable mouse
+" set mouse=a
+" " Do not create backup files
+" set nobackup
+" set nowritebackup
+" set noswapfile
+" set showcmd
+" set scrolloff=2
+" set title
+" set hlsearch
+" set incsearch
+" set wildmode=longest:list,full
+" set langmap=йq,цw,уe,кr,еt,нy,гu,шi,щo,зp,х[,ъ],фa,ыs,вd,аf,пg,рh,оj,лk,дl,ж\\;,э',яz,чx,сc,мv,иb,тn,ьm,ю.,ё',ЙQ,ЦW,УE,КR,ЕT,НY,ГU,ШI,ЩO,ЗP,Х\{,Ъ\},ФA,ЫS,ВD,АF,ПG,РH,ОJ,ЛK,ДL,Ж\:,Э\",ЯZ,ЧX,СC,МV,ИB,ТN,ЬM,Б\<,Ю\>
+" set exrc
+" set secure
+
+"" Status line settings {{{
+" Always show status line
+" set laststatus=2
+"set statusline=%-50.50f\ %y " Display filename and filetype
+"set statusline+=[b:%n]      " Buffer number
+"set statusline+=%m          " Modified flag
+"set statusline+=%=          " Switch to right side
+"set statusline+=%l:%-3c     " Current position in file
+"set statusline+=\ of\ %L    " Total number of lines
+"set statusline+=\ %3p%%     " Percent in file
+
+" nnoremap H 0
+" nnoremap L $
+" vnoremap L g_
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <C-w>v <C-w><C-v><C-w>l
+" Remove search highlight
+" :nohlsearch<CR>
+
+let mapleader = "-"
+" Surround with ", ' or <> {{{
+nnoremap <leader>" viw<Esc>a"<Esc>hbi"<Esc>lel
+nnoremap <leader>' viw<Esc>a'<Esc>hbi'<Esc>lel
+
+vnoremap <leader>" <Esc><Esc>`<i"<Esc>`>la"<Esc>
+vnoremap <leader>' <Esc><Esc>`<i'<Esc>`>la'<Esc>
+vnoremap <leader>< <Esc><Esc>`<i<<Esc>`>la><Esc>
+vnoremap <leader>> <Esc><Esc>`<i<<Esc>`>la><Esc>
+nnoremap <C-U> <Esc>viwUea
+
+augroup filetype_vim
+	autocmd!
+	autocmd FileType vim setlocal foldmethod=marker
+
+	autocmd FileType vim setlocal nolinebreak
+
+	" Insert <leader> and <Esc>
+	autocmd FileType vim inoremap <buffer> <C-l>      <lt>leader>
+	autocmd FileType vim inoremap <buffer> <C-V><Esc> <lt>Esc>
+	autocmd FileType vim inoremap <buffer> <C-V><CR>  <lt>CR>
+augroup end
+
+" let g:airline_powerline_fonts = 1
+" let g:clang_complete_copen = 0
+" let g:clang_hl_errors = 1
+" let g:clang_snippets = 1
+" let g:clang_snippets_engine = "ultisnips"
+" let g:clang_close_preview = 1
+" let g:clang_complete_macros = 1
+" let g:netrw_altv = 1
+" let g:ycm_autoclose_preview_window_after_completion = 1
+" let g:ycm_autoclose_preview_window_after_insertion = 1
+" let g:ycm_use_ultisnips_completer = 1
+" let g:ycm_key_list_select_completion=[]
+" let g:ycm_key_list_previous_completion=[]
+" let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+" let g:rainbow_active = 1
+
+nnoremap <F4> :NERDTreeToggle<CR>
+nnoremap <F5> :UndotreeToggle<CR>
+if has("persistent_undo")
+	let target_path = expand('~/.undodir')
+	if !isdirectory(target_path)
+		call mkdir(target_path, "p", 0700)
+	endif
+
+	let &undodir=target_path
+	set undofile
+endif
