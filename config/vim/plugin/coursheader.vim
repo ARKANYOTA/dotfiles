@@ -82,6 +82,6 @@ endfunction
 
 " Bind command and shortcut
 command! Cheader call s:stdheader ()
-map <F1> :Cheader<CR>
+" map <F1> :Cheader<CR>
 autocmd BufWritePre * call s:update ()
 

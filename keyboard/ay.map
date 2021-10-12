@@ -2,11 +2,21 @@
 
 # Includes {{{1
 include "/usr/share/kbd/keymaps/i386/azerty/fr-latin1.map.gz"
+keymaps 0-2,4,6,8,12
+alt_is_meta
+include "azerty-layout"
+include "linux-with-alt-and-altgr"
+
 
 # Strings {{{1
 string F10 = "l."
 string F11 = "Goodbye!"
 
 # Keycode {{{1
-keycode 67 = F10 F11 
+keycode  1 = Caps_Lock
+keycode 26 = circumflex dead_diaeresis bracketleft
+keycode 53 = equal      plus           asciitilde
+keycode 58 = Escape
+keycode 67 = F10 F11 # F9
+
 
