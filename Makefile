@@ -83,3 +83,16 @@ setup-key-latin:
 #      ALL             #
 ##########################
 all: yay yay-packages make-config theme-grub 
+
+
+##########################
+#                 TTY    #
+##########################
+
+# https://www.chucknemeth.com/linux/ricing/virtual_terminal_color
+##########################
+#       BIN              #
+##########################
+
+# TODO: /bin/
+# .zshrc: ~/dotfiles/bin
