@@ -1,0 +1,2 @@
+#!/bin/sh
+wine C:\\windows\\command\\start.exe /Unix /home/ay/.wine/dosdevices/c:/users/Public/Desktop/RAD\ Studio\ 11.lnk

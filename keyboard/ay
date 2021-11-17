@@ -17,7 +17,7 @@ xkb_symbols "basic" {
     key <AE11>	{ [parenright,     degree, bracketright, questiondown ]	};
     key <AE12>	{ [     equal,       plus,   braceright,  dead_ogonek ]	};
 
-    key <AD01>	{ [         a,          A,           ae,           AE ]	};
+    key <AD01>	{ [         a,          A,           ae,           AE , 1 ]	};
     key <AD02>	{ [         z,          Z, guillemotleft,        less ]	};
     key <AD03>	{ [         e,          E,     EuroSign,         cent ]	};
     key <AD11>	{ [dead_circumflex, dead_diaeresis, dead_diaeresis, dead_abovering ] };
@@ -26,7 +26,7 @@ xkb_symbols "basic" {
     key <AC01>	{ [         q,          Q,           at,  Greek_OMEGA ]	};
     key <AC10>	{ [         m,          M,           mu,    masculine ]	};
     key <AC11>	{ [    ugrave,    percent, dead_circumflex, dead_caron]	};
-    key <TLDE>	{ [twosuperior, asciitilde,     notsign,      notsign ]	};
+    key <TLDE>	{ [ Multi_key, Menu,     notsign,      notsign ]	};
 
     key <BKSL>	{ [  asterisk,         mu,   dead_grave,   dead_breve ]	};
     key <AB01>	{ [         w,          W,      lstroke,      Lstroke ]	};
@@ -57,34 +57,63 @@ xkb_symbols "basic" {
 };
 
 
-// Bépo : Improved ergonomic french keymap using Dvorak method.
-// Built by community on 'Dvorak Fr / Bépo' :
-// see http://www.clavier-dvorak.org/wiki/ to join and help.
-// XOrg integration (1.0rc2 version) in 2008
-// by Frédéric Boiteux <fboiteux at free dot fr>
-//
-// Bépo layout (1.0rc2 version) for a pc105 keyboard (french) :
-// ┌─────┐
-// │ S A │   S = Shift,  A = AltGr + Shift
-// │ s a │   s = normal, a = AltGr
-// └─────┘
-//
-// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
-// │ # ¶ │ 1 „ │ 2 “ │ 3 ” │ 4 ≤ │ 5 ≥ │ 6   │ 7 ¬ │ 8 ¼ │ 9 ½ │ 0 ¾ │ ° ′ │ ` ″ ┃ ⌫ Retour┃
-// │ $ – │ " — │ « < │ » > │ ( [ │ ) ] │ @ ^ │ + ± │ - − │ / ÷ │ * × │ = ≠ │ % ‰ ┃  arrière┃
-// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
-// ┃       ┃ B ¦ │ É ˝ │ P § │ O Œ │ È ` │ !   │ V   │ D Ð │ L   │ J Ĳ │ Z Ə │ W   ┃Entrée ┃
-// ┃Tab ↹  ┃ b | │ é ˊ │ p & │ o œ │ è ` │ ˆ ¡ │ v ˇ │ d ð │ l / │ j ĳ │ z ə │ w ̆  ┃   ⏎   ┃
-// ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
-// ┃        ┃ A Æ │ U Ù │ I ˙ │ E ¤ │ ; ̛  │ C ſ │ T Þ │ S ẞ │ R ™ │ N   │ M º │ Ç , ┃      ┃
-// ┃Maj ⇬   ┃ a æ │ u ù │ i ̈  │ e € │ , ’ │ c © │ t þ │ s ß │ r ® │ n ˜ │ m ¯ │ ç ¸ ┃      ┃
-// ┣━━━━━━━┳┹────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┲┷━━━━━┻━━━━━━┫
-// ┃       ┃ Ê   │ À   │ Y ‘ │ X ’ │ : · │ K   │ ? ̉  │ Q ̣  │ G   │ H ‡ │ F ª ┃             ┃
-// ┃Shift ⇧┃ ê / │ à \ │ y { │ x } │ . … │ k ~ │ ' ¿ │ q ˚ │ g µ │ h † │ f ˛ ┃Shift ⇧      ┃
-// ┣━━━━━━━╋━━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴───┲━┷━━━━━╈━━━━━┻━┳━━━━━━━┳━━━┛
-// ┃       ┃       ┃       ┃ Espace inséc.   Espace inséc. fin ┃       ┃       ┃       ┃
-// ┃Ctrl   ┃Meta   ┃Alt    ┃ ␣ (Espace)      _               ␣ ┃AltGr ⇮┃Menu   ┃Ctrl   ┃
-// ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
+xkb_symbols "ay" {
+
+    include "latin"
+    name[Group1]="EIGHT_LEVEL";
+
+    key <AE01>	{ [ ampersand,          1,  onesuperior,   exclamdown ]	};
+    key <AE02>	{ [    eacute,          2,   asciitilde,    oneeighth ]	};
+    key <AE03>	{ [  quotedbl,          3,   numbersign,     sterling ]	};
+    key <AE04>	{ [apostrophe,          4,    braceleft,       dollar ]	};
+    key <AE05>	{ [ parenleft,          5,  bracketleft, threeeighths ]	};
+    key <AE06>	{ [     minus,          6,          bar,  fiveeighths ]	};
+    key <AE07>	{ [    egrave,          7,        grave, seveneighths ]	};
+    key <AE08>	{ [underscore,          8,    backslash,    trademark ]	};
+    key <AE09>	{ [  ccedilla,          9,  asciicircum,    plusminus ]	};
+    key <AE10>	{ [    agrave,          0,           at,       degree ]	};
+    key <AE11>	{ [parenright,     degree, bracketright, questiondown ]	};
+    key <AE12>	{ [     equal,       plus,   braceright,  dead_ogonek ]	};
+
+    key <AD01>	{ [         a,          A,           ae,           AE ]	};
+    key <AD02>	{ [         z,          Z, guillemotleft,        less ]	};
+    key <AD03>	{ [         e,          E,     EuroSign,         cent ]	};
+    key <AD11>	{ [dead_circumflex, dead_diaeresis, dead_diaeresis, dead_abovering ] };
+    key <AD12>	{ [    dollar,   sterling,     currency,  dead_macron ]	};
+
+    key <AC01>	{ [         q,          Q,           at,  Greek_OMEGA ]	};
+    key <AC10>	{ [         m,          M,           mu,    masculine ]	};
+    key <AC11>	{ [    ugrave,    percent, dead_circumflex, dead_caron]	};
+    key <TLDE>	{ [ Multi_key, Menu,     notsign,      notsign ]	};
+
+    key <BKSL>	{ [  asterisk,         mu,   dead_grave,   dead_breve ]	};
+    key <AB01>	{ [         w,          W,      lstroke,      Lstroke ]	};
+    key <AB07>	{ [     comma,   question,   dead_acute, dead_doubleacute ] };
+    key <AB08>	{ [ semicolon,     period, horizconnector,   multiply ]	};
+    key <AB09>	{ [     colon,      slash, periodcentered,   division ]	};
+    key <AB10>	{ [    exclam,    section, dead_belowdot, dead_abovedot ] };
+    //key <TAB>	{ [    exclam,    section, dead_belowdot, dead_abovedot ] };
+    //key <CAPS>	{ [ Escape, m,n,b] }; 
+    //key <LSGT>	{ [   a ,  b  ,c , d ] }; // pluspetitqueplusgrandque
+    //key <ESC>	{ [   e,f,g,h ] }; // eshap
+    //key <LFSH>	{ [   m,n,o,p ] }; // shift 
+    //key <LWIN>	{ [   m,n,o,p ] }; // shift 
+    //key <RWIN>	{ [   m,n,o,p ] }; // shift 
+    key <FK02>	{ [ ] }; // shift 
+    key <MENU>	{ [ 1,2,3,4,5,6,7,8 ] }; // shift 
+    key <FK14>	{ [ U2588 ] }; // shift 
+    key <FK15>	{ [ U2588 ] }; // shift 
+    key <FK16>	{ [ U2588 ] }; // shift 
+    key <FK17>	{ [ U2588 ] }; // shift 
+    key <FK18>	{ [ U2588 ] }; // shift 
+    key <FK19>	{ [ U2588 ] }; // shift 
+    key <FK20>	{ [ U2588 ] }; // shift 
+    key <FK22>	{ [ U2588 ] }; // shift 
+    key <FK21>	{ [ U2588 ] }; // shift 
+
+    include "level3(ralt_switch)"
+};
+
 partial alphanumeric_keys
 xkb_symbols "bpo" {
 
@@ -191,32 +220,6 @@ xkb_symbols "nodeadkeys" {
 };
 
 
-// Unicode French derivative
-// Loose refactoring of the historic Linux French keyboard layout
-//
-// Copyright © 2006-2008 Nicolas Mailhot <nicolas.mailhot @ laposte.net>
-//
-// Credits (fr-latin1, fr-latin0, fr-latin9)
-//   © 199x-1996 René Cougnenc ✝
-//   © 1997-2002 Guylhem Aznar <clavier @ externe.net>
-//   © 2003-2006 Nicolas Mailhot <nicolas.mailhot @ laposte.net>
-//
-// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
-// │ ³ ¸ │ 1 ̨  │ 2 É │ 3 ˘ │ 4 — │ 5 – │ 6 ‑ │ 7 È │ 8 ™ │ 9 Ç │ 0 À │ ° ≠ │ + ± ┃ ⌫ Retour┃
-// │ ² ¹ │ & ˇ │ é ~ │ " # │ ' { │ ( [ │ - | │ è ` │ _ \ │ ç ^ │ à @ │ ) ] │ = } ┃  arrière┃
-// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
-// ┃       ┃ A Æ │ Z Â │ E ¢ │ R Ê │ T Þ │ Y Ÿ │ U Û │ I Î │ O Œ │ P Ô │ ¨ ˚ │ £ Ø ┃Entrée ┃
-// ┃Tab ↹  ┃ a æ │ z â │ e € │ r ê │ t þ │ y ÿ │ u û │ i î │ o œ │ p ô │ ^ ~ │ $ ø ┃   ⏎   ┃
-// ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
-// ┃        ┃ Q Ä │ S „ │ D Ë │ F ‚ │ G ¥ │ H Ð │ J Ü │ K Ï │ L Ŀ │ M Ö │ % Ù │ µ ̄  ┃      ┃
-// ┃Maj ⇬   ┃ q ä │ s ß │ d ë │ f ‘ │ g ’ │ h ð │ j ü │ k ï │ l ŀ │ m ö │ ù ' │ * ` ┃      ┃
-// ┣━━━━━━━┳┹────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┲┷━━━━━┻━━━━━━┫
-// ┃       ┃ > ≥ │ W “ │ X ” │ C ® │ V ← │ B ↑ │ N → │ ? … │ . . │ / ∕ │ § − ┃             ┃
-// ┃Shift ⇧┃ < ≤ │ w « │ x » │ c © │ v ⍽ │ b ↓ │ n ¬ │ , ¿ │ ; × │ : ÷ │ ! ¡ ┃Shift ⇧      ┃
-// ┣━━━━━━━╋━━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴───┲━┷━━━━━╈━━━━━┻━┳━━━━━━━┳━━━┛
-// ┃       ┃       ┃       ┃ ␣         Espace fine insécable ⍽ ┃       ┃       ┃       ┃
-// ┃Ctrl   ┃Meta   ┃Alt    ┃ ␣ Espace       Espace insécable ⍽ ┃AltGr ⇮┃Menu   ┃Ctrl   ┃
-// ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
 partial alphanumeric_keys
 xkb_symbols "oss" {
 

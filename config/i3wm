@@ -237,6 +237,7 @@ for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 for_window [title="WumpFileManagerApp"] floating enable border pixel 0
+for_window [title="Event Tester"] floating enable border pixel 0
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -471,3 +472,4 @@ mode "$mode_gaps_outer" {
 exec ssh-agent bash
 exec xinput disable 7
 exec xinput disable 8
+# exec xmodmap ~/.Xmodmap

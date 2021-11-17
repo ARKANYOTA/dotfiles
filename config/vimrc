@@ -4,6 +4,7 @@ let &t_ut=''
 :set rnu
 :syntax on
 :set softtabstop=4
+:set mouse=a
 :set tabstop=4
 :set shiftwidth=4
 :set clipboard=unnamedplus
@@ -32,7 +33,7 @@ if expand("%:t")=="main.lua"
 endif
 
 " map <F3> :source %<CR>
-iabbr ay arkanyota
+" iabbr ay arkanyota
 
 " Nombre de couleur &t_Co
 "if &t_Co >= 256

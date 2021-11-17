@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=RAD Studio 11
+Exec=env WINEPREFIX="/home/ay/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/ay/.wine/dosdevices/c:/users/Public/Desktop/RAD\\ Studio\\ 11.lnk
+Type=Application
+StartupNotify=true
+Path=/home/ay/.wine/dosdevices/c:/Program Files (x86)/Embarcadero/Studio/22.0/bin
+Icon=06E0_bds_MAINICON.0
+StartupWMClass=bds.exe

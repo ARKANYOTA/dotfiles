@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Sine qua non
+Exec=env WINEPREFIX="/home/ay/.wine" wine C:\\\\Program\\ Files\\ \\(x86\\)\\\\Sine\\ qua\\ non\\\\Sinequanon.exe 
+Type=Application
+StartupNotify=true
+Path=/home/ay/.wine/dosdevices/c:/Program Files (x86)/Sine qua non
+Icon=431C_Sinequanon.0
+StartupWMClass=sinequanon.exe
